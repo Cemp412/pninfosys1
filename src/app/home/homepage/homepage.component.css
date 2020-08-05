@@ -1,0 +1,21 @@
+.icon .fab{
+    font-size: 55px;
+    color: #009df2;
+}
+
+section.our-services .service-item{
+    height: 310px;
+}
+
+.tips-content .fa{
+    font-size: 45px;
+    color: red;
+}
+
+.blog-page .rkm img{
+    filter: grayscale(100%);
+}
+
+.blog-page .rkm img:hover{
+    filter: grayscale(0%);
+}

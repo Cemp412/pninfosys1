@@ -1,0 +1,57 @@
+.fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top: 5%;
+}
+legend{
+    margin-top: 5%;
+    background-color: orange;
+    padding: 12px; 
+    font-weight:bold;
+    display:block;
+    float:left;
+    width: revert;
+    text-align: center;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+/* .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #11111180;
+}
+td, th {
+    padding: 0;
+}
+td, th {
+    padding: 0;
+} */
+
+.view-all-accent-btn {
+    text-align: center;
+    color: #fff;
+    padding: 12px 34px;
+    background: #002147;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    border: 0;
+    font-weight: 500;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+a {
+    text-decoration: none;
+}
+.view-all-accent-btn:hover {
+    background: #fdc800;
+    color: #212121;
+}

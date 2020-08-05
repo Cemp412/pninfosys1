@@ -1,0 +1,7 @@
+.blog-page .rkm img{
+    filter: grayscale(100%);
+}
+
+.blog-page .rkm img:hover{
+    filter: grayscale(0%);
+}

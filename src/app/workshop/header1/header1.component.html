@@ -1,0 +1,111 @@
+    <!-- Mobile Menu -->
+    <div class="mobile-nav-wrapper">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-menu">
+          <li><a routerLink=''>Home</a></li>
+          <li><a routerLink='/about'>About Us</a></li>
+                <li><a routerLink='/service'>Services</a></li>
+                <li><a routerLink='/training'>Training</a></li>
+                <li class="has-sub"><a>WorkShop<i class="sub-icon fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/workshop/xiaomi' RouterLink="Activate">Xiaomi MI Company</a></li>
+                    <li><a routerLink='/workshop/bentchair' RouterLink="Activate">Bentchair Company</a></li>
+                    <li><a routerLink='/workshop/rjit' RouterLink="Activate">RJIT College</a></li>
+                    <li><a routerLink='/workshop/mpct' RouterLink="Activate">MPCT College</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub"><a>Events<i class="sub-icon fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/event/birthday'>Birthday's</a></li>
+                    <li><a routerLink='/event/aniversary'>Aniversaries</a></li>
+                    <li><a routerLink='/event/tour'>Tour's</a></li>
+                  </ul>
+                </li>
+               
+                <li class="has-sub"><a>Placement<i class="sub-icon fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/placement'>Placement Desk</a></li>
+                    <li><a routerLink='/placement_gallery'>Placement Gallery</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a routerLink='/contact'>Contact Us</a></li>
+                <li><a routerLink='/internship-registration-page'>Internship Registration</a></li>
+                
+            </ul>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Header -->
+    <header class="site-header fixed-header">
+      <div class="container expanded">
+        <div class="header-wrap">
+          <div class="fixed-header-logo">
+            <a routerLink=''><img src="assets/frontend/images/colorlogo.png" alt=""></a>
+          </div>
+          <div class="is-fixed-header-logo">
+            <a routerLink=''><img src="assets/frontend/images/colorlogo.png" alt=""></a>
+          </div>
+          <div class="header-nav">
+              <ul class="main-menu">
+                <li style="visibility: hidden;" ><a >Home</a></li>
+                <li><a routerLink=''>Home</a></li>
+                <li><a routerLink='/about'>About Us</a></li>
+                <li><a routerLink='/service'>Services</a></li>
+                <li><a routerLink='/training'>Training</a></li>
+                <li class="menu-item-has-children"><a>WorkShop</a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/workshop/xiaomi'>Xiaomi MI Company</a></li>
+                    <li><a routerLink='/workshop/bentchair'>Bentchair Company</a></li>
+                    <li><a routerLink='/workshop/rjit'>RJIT College</a></li>
+                    <li><a routerLink='/workshop/mpct'>MPCT College</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children"><a>Events</a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/event/birthday'>Birthday's</a></li>
+                    <li><a routerLink='/event/aniversary'>Aniversaries</a></li>
+                    <li><a routerLink='/event/tour'>Tour's</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children"><a>Placement</a>
+                  <ul class="sub-menu">
+                    <li><a routerLink='/placement'>Placement Desk</a></li>
+                    <li><a routerLink='/placement_gallery'>Placement Gallery</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a routerLink='/contact'>Contact Us</a></li>
+                <li><a routerLink='/internship-registration-page'>Internship Registration</a></li>
+              
+              </ul>    
+          </div>
+          <div class="header-widgets">
+            <ul class="right-menu">
+              <li class="menu-item menu-search">
+                <a href="#search" id="menu-search-btn">
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+              
+              <li class="menu-item menu-mobile-nav">
+                <a  class="menu-bar" id="menu-show-mobile-nav" style="background-color: #009bf2;">
+                  <span class="hamburger"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    
+    <!-- Search -->
+    <div id="search">
+      <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="Type to search..." required="">
+            <button type="submit" class="primary-button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>

@@ -1,0 +1,7 @@
+owl-carousel-o  img{
+    filter: grayscale(100%);
+}
+
+owl-carousel-o  img:hover{
+    filter: grayscale(0%);
+}

@@ -1,0 +1,49 @@
+
+.page-heading{
+    background-image: url(../../assets/images/placement/page-heading-bg.png);
+}
+.about-tips{
+    background: #109cde;
+    
+}
+.about-tips .section-heading h2,h6{
+    color:#fff;
+}
+.about-tips .col-lg-6 p{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+.video-thumb .play-btn{
+    width: 50px;
+    position: relative;
+    margin-top: -50%;
+    left: 46%;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 100%;
+}
+/* .col-md-4:hover .play-btn{
+    opacity: 100%;
+} */
+.modal-content{
+    background: transparent !important;
+    border: none !important;
+}
+/* .modal-body{
+    border:transparent;
+} */
+video{
+    border: none;
+}
+.video-thumb:hover .play-btn{
+    opacity: 1;
+}
+
+ 
+

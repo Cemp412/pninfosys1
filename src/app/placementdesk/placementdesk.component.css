@@ -1,0 +1,27 @@
+span{
+    color:#009bf2;
+}
+.page-heading{
+        background-color: #30333c;
+    background-image: url(../../assets/images/placement/placement2019/banner.jpg);
+}
+.message{
+
+    
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    
+   
+    font-family: "Work Sans";
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+
+    }
+   
+        
