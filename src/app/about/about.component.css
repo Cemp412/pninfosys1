@@ -12,8 +12,15 @@
 .about-tips .col-lg-6 p{
     color: aliceblue;
 }
+@media (min-width: 992px){
+section {
+    margin-top:0px;
+}
+}
+section {
+    margin-top: 0em;
 
-
+}
 
 
 

@@ -1,0 +1,16 @@
+.navbar-nav {
+    line-height: 0.5;
+    }
+    .navbar li{
+        padding-left: 25px;
+        /* padding-right:5px; */
+    }
+    .navbar-nav li a {
+        padding: 15px 0px;
+        color: black;
+        font-weight: 600;
+     }
+    
+     
+    
+    

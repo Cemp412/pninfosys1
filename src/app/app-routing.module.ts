@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:'',component:HomepageComponent},
   {path:'about',component:AboutComponent},
   {path:'service',component:ServiceComponent},
-  {path:'tranning',component:TranningComponent},
+  {path:'training',component:TranningComponent},
   {path:'placement',component:PlacementdeskComponent},
   {path:'placement_gallery', component:PlacementgalleryComponent},
   {path:'contact', component:ContactComponent},

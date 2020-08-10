@@ -1,174 +1,206 @@
 <app-header></app-header>
 <div class="main-content">
       
-    <!-- Page Heading -->
-    <div class="page-heading">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Intership Form 2020</h1>
-            <span><a href="index.html">Home</a>Intership Registration</span>
-          </div>
+  <!-- Page Heading -->
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Intership Form 2020</h1>
+          <span><a routerLink="/none">Home</a>Intership Registration</span>
         </div>
       </div>
     </div>
+  </div>
 
-    
-    <!-- Intership Form 1-->
-    <section class="product-details" style="margin-bottom: 120px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="single-product" style="margin-left: 80px;">
-              <div class="row">
-                <div class="col-lg-6">
-                    <div class="ribon">
-                    <h6>PN</h6>
-                    <h2>Do Summer Internship From Home!.</h2>
-                    <span>Once you"re registered, you can:<br>Case any query, Kindly Contact: 7000846823</span>
-                    </div>
-                   
-                  <div class="left-image">
-                    <img src="assets/frontend/images/intership_banner.jpg" alt="">
+  
+  <!-- Intership Form 1-->
+  <section class="product-details" style="margin-bottom: 50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="single-product">
+            <div class="row">
+              <div class="col-lg-6">
+                  <div class="ribon">
+                  <h6>PN</h6>
+                  <h2>Do Summer Internship From Home!.</h2>
+                  <span>Once you"re registered, you can:<br>Case any query, Kindly Contact: 7000846823</span>
                   </div>
-                  <br>
-                  <div>
-                    <h4 class="m-t-20" style="font-size:px; color: black;">Learn from the comfort of your home</h4>
-                    <p style="font-size:px; color: black;"> work-from-home transformational program aimed at building the leaders of tomorrow. Any college student from any degree, stream, and year of study can apply for this program. </p>
-                  </div>
+                 <br>
+                 <br>
+                <div class="left-image">
+                  <img src="assets/frontend/images/intership_banner.jpg" alt="">
                 </div>
-                <div class="col-lg-6 align-self-center">
-                  <div class="right-content">
-                    <!-- <div class="ribon">
-                      <h6>PN</h6>
-                    </div>
-                    <h2>Do Summer Internship From Home!.</h2>
-                    <span>Once you"re registered, you can:<br>Case any query, Kindly Contact: 7000846823</span> -->
+                <br>
+                <br>
+                <br>
+                <div>
+                  <h4 class="m-t-20" style="font-size:px; color: black;">Learn from the comfort of your home</h4>
+                  <p class="text-align text-justify" style=" color: black;"> work-from-home transformational program aimed at building the leaders of tomorrow. Any college student from any degree, stream, and year of study can apply for this program. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="right-content">
+                 
 
-                    <section class="contact-us" style="margin:auto">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="inner-content">
-                                <div class="block-heading">
-                                  <h4>Internship Registration Form 2020!</h4>
-                                  <div *ngIf="alert"  class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <strong>Success!</strong>Your Data has been entered.
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
+                  <section class="contact-us" style="margin:auto">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="inner-content">
+                              <div class="block-heading">
+                                <h4>Internship Registration Form 2020!</h4>
+                                <div *ngIf="alert"  class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <strong>Success!</strong>Your Data has been entered.
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                              </div>
+                              <form [formGroup]="registrationForm" (ngSubmit)="collectData()">
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="student_name" type="text" formControlName="student_name" class="form-control" id="name" placeholder="Full Name" required="">
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="email" type="text" formControlName="email" class="form-control" id="email" pattern="[^ @]@[^ @]" placeholder="E-Mail Address" required="">
+                                    <p style="position: absolute;
+                                              margin-top: -35px;
+                                              margin-left: 19px;
+                                              font-size: 12px;" >We"ll never share your email with anyone else.</p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="mobile_no" type="text" formControlName="mobile_no" class="form-control" id="mobile_no" placeholder="Enter your Mobile No" required="">
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <textarea name="address" formControlName="address" rows="1" class="form-control" id="address" placeholder="Your Address" required="" style="max-height: 80px;"></textarea>
+                                  </div>
+                                  <!-- <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="row">
+                                      &nbsp;&nbsp;Gender<br>
+                                      <div class="col-md-3">
+                                        <input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Male">Male
+                                      </div>
+                                      <div class="col-md-3">
+                                        <input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Female">Female
+                                      </div>
+                                    </div>
+                                  </div> -->
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                  <fieldset class="form-group">
+                                    <div class="row">
+                                      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                      <div class="col-sm-10">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="gender" id="gender" value="male" checked formcontrol="gender" style="margin: 0px;
+                                          width: 77%;">
+                                          <label class="form-check-label" for="gridRadios1">
+                                            Male
+                                          </label>
+                                        </div>
+                                        <br>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="gender" id="gender" value="female" formcontrol="gender" style="margin: 0px; width: 78%;">
+                                          <label class="form-check-label" for="gridRadios2">
+                                            Female
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+                                <legend class="col-form-label col-sm-2 pt-0">College</legend>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="college" formControlName="college">
+                                      <option selected disabled>Plese Select your College</option>
+                                      <option value="RJIT">RJIT</option>
+                                      <option value="SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT">SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
+                                      <option value="MPCT">MPCT</option>
+                                      <option value="MITS">MITS</option>
+                                      <option value="ITM">ITM</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <legend class="col-form-label col-sm-2 pt-0">Qualification</legend>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="qualification" formControlName="qualification">
+                                      <option selected disabled>Select Your Qualification</option>
+                                      <option value="B.Tech">B.Tech</option>
+                                      <option value="B.C.A">B.C.A</option>
+                                      <option value="M.C.A">M.C.A</option>
+                                      <option value="B.S.C">B.S.C</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <legend class="col-form-label col-sm-2 pt-0">Branch</legend>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="branch" formControlName="branch">
+                                      <option selected disabled>Please Select Your Branch</option>
+                                      <option value="C.S.E">C.S.E</option>
+                                      <option value="I.T">I.T</option>
+                                      <option value="E.E">E.E</option>
+                                      <option value="E.C">E.C</option>
+                                      <option value="MECH.">MECH.</option>
+                                      <option value="AUTOMOBILE">AUTOMOBILE</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <legend class="col-form-label col-sm-2 pt-0">Semester</legend>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="semester" formControlName="semester">
+                                      <option selected disabled>Please Select Your Semester</option>
+                                      <option value="Ist Semester">Ist Semester</option>
+                                      <option value="IInd Semester">IInd Semester</option>
+                                      <option value="IIIrd Semester">IIIrd Semester</option>
+                                      <option value="IVth Semester">IVth Semester</option>
+                                      <option value="Vth Semester">Vth Semester</option>
+                                      <option value="VIth Semester">VIth Semester</option>
+                                      <option value="VIIth Semester">VIIth Semester</option>
+                                      <option value="VIIIth Semester">VIIIth Semester</option>
+                                    </select>
+                                  </div>
+                                  <legend class="col-form-label col-sm-12 pt-0">Internship Course</legend>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control form-control-sm" name="course" formControlName="course">
+                                      <option selected disabled>Please Choose You Want Your Intership Course</option>
+                                      <option value="Web Designing Internship Course (45 days)">Web Designing Internship Course (45 days)</option>
+                                      <option value="Web Development Internship Course (90 days)">Web Development Internship Course (90 days)</option>
+                                      <option value="PHP">PHP</option>
+                                      <option value="Laravel 7">Laravel 7</option>
+                                      <option value="Angular 9">Angular 9</option>
+                                      <option value="Vue Js">Vue Js</option>
+                                      <option value="React JS">React JS</option>
+                                      <option value="React Native">React Native</option>
+                                    </select>
+                                  </div>
+                                  
+                                  <div class="col-lg-12">
+                                    <button type="submit" id="form-submit" class="filled-button" style="background-color: #024040;">Submit</button>
                                   </div>
                                 </div>
-                                <form [formGroup]="registrationForm" (ngSubmit)="collectData()">
-                                  <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <input name="student_name" type="text" formControlName="student_name" class="form-control" id="name" placeholder="Full Name" required="">
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <input name="email" type="text" formControlName="email" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                                      <p style="position: absolute;
-                                                margin-top: -35px;
-                                                margin-left: 19px;
-                                                font-size: 12px;" >We"ll never share your email with anyone else.</p>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <input name="mobile_no" type="text" formControlName="mobile_no" class="form-control" id="mobile_no" placeholder="Enter your Mobile No" required="">
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <textarea name="address" formControlName="address" rows="1" class="form-control" id="address" placeholder="Your Address" required="" style="max-height: 80px;"></textarea>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                        &nbsp;&nbsp;Gender<br>
-                                        <input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Male">Male
-                                        <input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Female">Female
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <select class="form-control" name="college" formControlName="college">
-                                        <option selected disabled>Plese Select your College</option>
-                                        <option value="RJIT">RJIT</option>
-                                        <option value="SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT">SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
-                                        <option value="MPCT">MPCT</option>
-                                        <option value="MITS">MITS</option>
-                                        <option value="ITM">ITM</option>
-                                        <option value="OTHER">OTHER</option>
-                                      </select>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <select class="form-control" name="qualification" formControlName="qualification">
-                                        <option selected disabled>Select Your Qualification</option>
-                                        <option value="B.Tech">B.Tech</option>
-                                        <option value="B.C.A">B.C.A</option>
-                                        <option value="M.C.A">M.C.A</option>
-                                        <option value="B.S.C">B.S.C</option>
-                                        <option value="OTHER">OTHER</option>
-                                      </select>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <select class="form-control" name="branch" formControlName="branch">
-                                        <option selected disabled>Please Select Your Branch</option>
-                                        <option value="C.S.E">C.S.E</option>
-                                        <option value="I.T">I.T</option>
-                                        <option value="E.E">E.E</option>
-                                        <option value="E.C">E.C</option>
-                                        <option value="MECH.">MECH.</option>
-                                        <option value="AUTOMOBILE">AUTOMOBILE</option>
-                                        <option value="OTHER">OTHER</option>
-                                      </select>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <select class="form-control" name="semester" formControlName="semester">
-                                        <option selected disabled>Please Select Your Semester</option>
-                                        <option value="Ist Semester">Ist Semester</option>
-                                        <option value="IInd Semester">IInd Semester</option>
-                                        <option value="IIIrd Semester">IIIrd Semester</option>
-                                        <option value="IVth Semester">IVth Semester</option>
-                                        <option value="Vth Semester">Vth Semester</option>
-                                        <option value="VIth Semester">VIth Semester</option>
-                                        <option value="VIIth Semester">VIIth Semester</option>
-                                        <option value="VIIIth Semester">VIIIth Semester</option>
-                                      </select>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                      <select class="form-control form-control-sm" name="course" formControlName="course">
-                                        <option selected disabled>Please Choose You Want Your Intership Course</option>
-                                        <option value="Web Designing Internship Course (45 days)">Web Designing Internship Course (45 days)</option>
-                                        <option value="Web Development Internship Course (90 days)">Web Development Internship Course (90 days)</option>
-                                        <option value="PHP">PHP</option>
-                                        <option value="Laravel 7">Laravel 7</option>
-                                        <option value="Angular 9">Angular 9</option>
-                                        <option value="Vue Js">Vue Js</option>
-                                        <option value="React JS">React JS</option>
-                                        <option value="React Native">React Native</option>
-                                      </select>
-                                    </div>
-                                    
-                                    <div class="col-lg-12">
-                                      <button type="submit" id="form-submit" class="filled-button" style="background-color: #024040;">Submit</button>
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
+                              </form>
                             </div>
                           </div>
                         </div>
-                    </section>
+                      </div>
+                  </section>
 
-                    <div class="share-tags">
-                      <div class="row">
-                        <div class="col-lg-7">
-                          <ul class="tags">
-                            <!-- <li><a href="#">Branding</a></li>
-                            <li><a href="#">Web Analysis</a></li> -->
-                          </ul>
-                        </div>
-                        <div class="col-lg-5">
-                          <ul class="social-icons" style="padding-bottom: 10px;">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                          </ul>
-                        </div>
+                  <div class="share-tags">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <ul class="tags">
+                          <!-- <li><a href="#">Branding</a></li>
+                          <li><a href="#">Web Analysis</a></li> -->
+                        </ul>
+                      </div>
+                      <div class="col-lg-5">
+                        <ul class="social-icons" style="padding-bottom: 10px;">
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -178,7 +210,236 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </div>
+</div>
 <app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="main-content"> -->
+      
+  <!-- Page Heading -->
+  <!-- <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Intership Form 2020</h1>
+          <span><a href="index.html">Home</a>Intership Registration</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+  <!-- Intership Form 1-->
+  <!-- <section class="product-details" style="margin-bottom: 120px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="single-product" style="margin-left: 80px;">
+            <div class="row">
+              <div class="col-lg-6">
+                  <div class="ribon">
+                  <h6>PN</h6>
+                  <h2>Do Summer Internship From Home!.</h2>
+                  <span>Once you"re registered, you can:<br>Case any query, Kindly Contact: 7000846823</span>
+                  </div>
+                 
+                <div class="left-image">
+                  <img src="assets/frontend/images/intership_banner.jpg" alt="">
+                </div>
+                <br>
+                <div>
+                  <h4 class="m-t-20" style="font-size:px; color: black;">Learn from the comfort of your home</h4>
+                  <p style="font-size:px; color: black;"> work-from-home transformational program aimed at building the leaders of tomorrow. Any college student from any degree, stream, and year of study can apply for this program. </p>
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="right-content">
+                  <!-- <div class="ribon">
+                    <h6>PN</h6>
+                  </div>
+                  <h2>Do Summer Internship From Home!.</h2>
+                  <span>Once you"re registered, you can:<br>Case any query, Kindly Contact: 7000846823</span> -->
+
+                  <!-- <section class="contact-us" style="margin:auto">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="inner-content">
+                              <div class="block-heading">
+                                <h4>Internship Registration Form 2020!</h4>
+                                <div *ngIf="alert"  class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <strong>Success!</strong>Your Data has been entered.
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                              </div>
+                              <form [formGroup]="registrationForm" (ngSubmit)="collectData()">
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="student_name" type="text" formControlName="student_name" class="form-control" id="name" placeholder="Full Name" required="">
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="email" type="text" formControlName="email" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                                    <p style="position: absolute;
+                                              margin-top: -35px;
+                                              margin-left: 19px;
+                                              font-size: 12px;" >We"ll never share your email with anyone else.</p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input name="mobile_no" type="text" formControlName="mobile_no" class="form-control" id="mobile_no" placeholder="Enter your Mobile No" required="">
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <textarea name="address" formControlName="address" rows="1" class="form-control" id="address" placeholder="Your Address" required="" style="max-height: 80px;"></textarea>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                      &nbsp;&nbsp;<label class="form-group"> Gender</label>
+                                      <!-- <div class="row">
+                                      <div class="col-md-3">
+                                        
+                                    Male
+                                      </div> 
+                                    <div class="col-md-3"><input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Male">
+                                      </div>
+                                      <div class="col-md-3">
+                                     Female <input name="gender" formControlName="gender" type="radio" class="form-control" style="width: 35px; height: auto;" value="Female">
+                                   </div>
+                                  </div> -->
+                               
+                                  <!-- <fieldset class="form-group">
+                                    <div class="row">
+                                      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                      <div class="col-sm-10">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                          <label class="form-check-label" for="gridRadios1">
+                                            First radio
+                                          </label>
+                                        </div><br>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                          <label class="form-check-label" for="gridRadios2">
+                                            Second radio
+                                          </label>
+                                        </div>
+                                      
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="college" formControlName="college">
+                                      <option selected disabled>Plese Select your College</option>
+                                      <option value="RJIT">RJIT</option>
+                                      <option value="SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT">SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
+                                      <option value="MPCT">MPCT</option>
+                                      <option value="MITS">MITS</option>
+                                      <option value="ITM">ITM</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="qualification" formControlName="qualification">
+                                      <option selected disabled>Select Your Qualification</option>
+                                      <option value="B.Tech">B.Tech</option>
+                                      <option value="B.C.A">B.C.A</option>
+                                      <option value="M.C.A">M.C.A</option>
+                                      <option value="B.S.C">B.S.C</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="branch" formControlName="branch">
+                                      <option selected disabled>Please Select Your Branch</option>
+                                      <option value="C.S.E">C.S.E</option>
+                                      <option value="I.T">I.T</option>
+                                      <option value="E.E">E.E</option>
+                                      <option value="E.C">E.C</option>
+                                      <option value="MECH.">MECH.</option>
+                                      <option value="AUTOMOBILE">AUTOMOBILE</option>
+                                      <option value="OTHER">OTHER</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control" name="semester" formControlName="semester">
+                                      <option selected disabled>Please Select Your Semester</option>
+                                      <option value="Ist Semester">Ist Semester</option>
+                                      <option value="IInd Semester">IInd Semester</option>
+                                      <option value="IIIrd Semester">IIIrd Semester</option>
+                                      <option value="IVth Semester">IVth Semester</option>
+                                      <option value="Vth Semester">Vth Semester</option>
+                                      <option value="VIth Semester">VIth Semester</option>
+                                      <option value="VIIth Semester">VIIth Semester</option>
+                                      <option value="VIIIth Semester">VIIIth Semester</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <select class="form-control form-control-sm" name="course" formControlName="course">
+                                      <option selected disabled>Please Choose You Want Your Intership Course</option>
+                                      <option value="Web Designing Internship Course (45 days)">Web Designing Internship Course (45 days)</option>
+                                      <option value="Web Development Internship Course (90 days)">Web Development Internship Course (90 days)</option>
+                                      <option value="PHP">PHP</option>
+                                      <option value="Laravel 7">Laravel 7</option>
+                                      <option value="Angular 9">Angular 9</option>
+                                      <option value="Vue Js">Vue Js</option>
+                                      <option value="React JS">React JS</option>
+                                      <option value="React Native">React Native</option>
+                                    </select>
+                                  </div>
+                                  
+                                  <div class="col-lg-12">
+                                    <button type="submit" id="form-submit" class="filled-button" style="background-color: #024040;">Submit</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div> -->
+                      <!-- </div>
+                  </section> 
+
+                  <div class="share-tags">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <ul class="tags"> -->
+                          <!-- <li><a href="#">Branding</a></li>
+                          <li><a href="#">Web Analysis</a></li> -->
+                        <!-- </ul>
+                      </div>
+                      <div class="col-lg-5">
+                        <ul class="social-icons" style="padding-bottom: 10px;">
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+<!-- </div>  -->
